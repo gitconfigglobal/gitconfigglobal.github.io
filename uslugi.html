@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>katalog filter</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="backgroundd">
+        <div class="container">
+          <header class="header">
+            <img class="header_img" src="../img/logo.png" alt="logo" />
+            <ul class="ul">
+              <li><a href="index.html" class="link">Главная</a></li>
+              <li><a href="katalog.html" class="link">Каталог</a></li>
+              <li class="ulli"><a href="uslugi.html" class="link linkpaddingb">Услуги <span class="ul__span">	&#60;</span></a>
+                <div class="dropsmenu">
+                  <a href="#" class="dropslink">Строительство</a>
+                  <a href="#" class="dropslink">Продажа готовой недвижимости</a>
+                  <a href="#" class="dropslink">Содействие в одобрении ипотеки</a>
+                  <a href="#" class="dropslink">Дизайнерские работы</a>
+                  <a href="#" class="dropslink">Выполненные работы</a>
+                </div>
+              </li>
+              <li><a href="#" class="link">О компании</a></li>
+              <li><a href="#" class="link">Отзывы</a></li>
+              <li><a href="#" class="link">Вопрос-ответ</a></li>
+              <li><a href="#" class="link">Контакты</a></li>
+            </ul>
+            <div class="contact">
+              <a class="header_link" type="tel" href="tel:88432484315"
+                ><img
+                  class="header__class"
+                  src="../icon/contact.png"
+                  alt="contact"
+                  style="margin-right: 5px"
+                />8 (843) 248-43-15</a
+              >
+              <a class="header_link" type="tel" href="tel:88432251514"
+                ><img
+                  class="header__class"
+                  src="../icon/contact.png"
+                  alt="contact"
+                  style="margin-right: 5px"
+                />8 (843) 225-15-14</a
+              >
+            </div>
+            <div class="humburger humburgermini" id="burg">
+              <span class="humburger_span hum_span1"></span>
+              <span class="humburger_span hum_span2"></span>
+              <span class="humburger_span hum_span3"></span>
+            </div>
+          </header>
+        </div>
+      </div>
+    </div>
+    <div class="section3">
+      <section class="container">
+        <div class="section3__flex">
+          <div class="section3__filter">
+            <div class="section3__flexfilter">
+              <h2 class="sec3__h2">Фильтр</h2>
+              <a href="#" class="sec3__p">Сбросить</a>
+            </div>
+            <div class="sec3__border"></div>
+            <div class="dropdown ggg sec3fwidth">
+              <button class="dropdown__button drbtn4">Цена...</button>
+              <ul class="dropdown__list">
+                <li class="dropdown__list-item" data-value="travel">Цена...</li>
+                <div class="innumflex">
+                  <input
+                    min="1000000"
+                    max="5500000"
+                    step="any"
+                    id="pi_input"
+                    class="inputrange"
+                    type="range"
+                  />
+                  <div class="ouflexb outvis">
+                    <output id="value" name="result" for="fader"
+                      >1 000 000 ₽</output
+                    >
+                    <p class="oup">5 500 000 ₽</p>
+                  </div>
+                </div>
+              </ul>
+              <input
+                type="text"
+                name="select-category"
+                value=""
+                class="dropdown__input-hidden"
+              />
+            </div>
+            <div class="dropdown">
+              <button class="dropdown__button drbtn1 sec3f2">Площадь...</button>
+              <ul class="dropdown__list">
+                <li class="dropdown__list-item" data-value="travel">
+                  Площадь дома
+                </li>
+                <div class="innumflex">
+                  <input placeholder="от" class="inputnumber" type="number" />
+                  <input placeholder="до" class="inputnumber" type="number" />
+                </div>
+                <li class="dropdown__list-item" data-value="lessons">
+                  Площадь участка
+                </li>
+                <div class="innumflex">
+                  <input placeholder="от" class="inputnumber" type="number" />
+                  <input placeholder="до" class="inputnumber" type="number" />
+                </div>
+              </ul>
+              <input
+                type="text"
+                name="select-category"
+                value=""
+                class="dropdown__input-hidden"
+              />
+            </div>
+            <div class="dropdown">
+              <button class="dropdown__button drbtn1 sec3fwidth sec3f2 sec3mt">
+                Вид объекта...
+              </button>
+              <ul class="dropdown__list">
+                <li class="dropdown__list-item" data-value="travel">Дом</li>
+                <li class="dropdown__list-item" data-value="lessons">Дача</li>
+                <li class="dropdown__list-item" data-value="photo">Коттедж</li>
+                <li class="dropdown__list-item" data-value="sport">Таунхаус</li>
+              </ul>
+              <input
+                type="text"
+                name="select-category"
+                value=""
+                class="dropdown__input-hidden"
+              />
+            </div>
+            <div class="dropdown">
+              <button class="dropdown__button drbtn2 sec3f2 sec3fwidth">
+                Ремонт...
+              </button>
+              <ul class="dropdown__list">
+                <div class="dr__fl">
+                  <li class="dropdown__list-item" data-value="travel">
+                    <input
+                      name="che"
+                      class="inputs"
+                      id="id1"
+                      type="checkbox"
+                    /><label for="id1">Требуется</label>
+                  </li>
+                  <li class="dropdown__list-item" data-value="travel">
+                    <input
+                      name="che"
+                      class="inputs"
+                      id="id2"
+                      type="checkbox"
+                    /><label for="id2">Косметический</label>
+                  </li>
+                  <li class="dropdown__list-item" data-value="travel">
+                    <input
+                      name="che"
+                      class="inputs"
+                      id="id3"
+                      type="checkbox"
+                    /><label for="id3">Евро</label>
+                  </li>
+                  <li class="dropdown__list-item" data-value="travel">
+                    <input
+                      name="che"
+                      class="inputs"
+                      id="id4"
+                      type="checkbox"
+                    /><label for="id4">Дирзайнерский</label>
+                  </li>
+                </div>
+              </ul>
+              <input
+                type="text"
+                name="select-category"
+                value=""
+                class="dropdown__input-hidden"
+              />
+            </div>
+            <div class="dropdown">
+              <button class="dropdown__button drbtn3 sec3fwidth sec3f2">
+                Категория земель...
+              </button>
+              <ul class="dropdown__list">
+                <div class="dr__fl">
+                  <div class="drggt">
+                    <input
+                      name="ches"
+                      class="inputs"
+                      id="id5"
+                      type="checkbox"
+                    />
+                    <li class="dropdown__list-item drli" data-value="travel">
+                      <label class="label" for="id5"
+                        >Индивидуальное
+                        <br />
+                        жилищное строительство</label
+                      >
+                    </li>
+                  </div>
+                  <div class="drggt">
+                    <input
+                      name="ches"
+                      class="inputs"
+                      id="id6"
+                      type="checkbox"
+                    />
+                    <li class="dropdown__list-item drli" data-value="travel">
+                      <label class="label" for="id6"
+                        >Садовое некоммерческое <br />
+                        товарищество</label
+                      >
+                    </li>
+                  </div>
+                  <div class="drggt">
+                    <input
+                      name="ches"
+                      class="inputs"
+                      id="id7"
+                      type="checkbox"
+                    />
+                    <li class="dropdown__list-item drli" data-value="travel">
+                      <label class="label" for="id7"
+                        >Дачное некоммерческое <br />
+                        партнерство</label
+                      >
+                    </li>
+                  </div>
+                  <div class="drggt">
+                    <input
+                      name="ches"
+                      class="inputs"
+                      id="id8"
+                      type="checkbox"
+                    />
+                    <li class="dropdown__list-item drli" data-value="travel">
+                      <label class="label" for="id8"
+                        >Фермерское хозяйство</label
+                      >
+                    </li>
+                  </div>
+                  <div class="drggt">
+                    <input
+                      name="ches"
+                      class="inputs"
+                      id="id9"
+                      type="checkbox"
+                    />
+                    <li class="dropdown__list-item drli" data-value="travel">
+                      <label class="label" for="id9"
+                        >Личное подсобное <br />
+                        хозяйство (ЛПХ)</label
+                      >
+                    </li>
+                  </div>
+                </div>
+              </ul>
+              <input
+                type="text"
+                name="select-category"
+                value=""
+                class="dropdown__input-hidden"
+              />
+            </div>
+            <div class="gudflex">
+              <div class="dropdown ckkk sec3-flex_filter">
+                <div class="sec3drops">смотреть все фильтры</div>
+                <button onclick="myFunction()" class="dropbtn">
+                  <img src="../icon/filters.png" alt="arrow" class="dropdnsr" />
+                </button>
+                <div
+                  id="myDropdown"
+                  class="dropdown-content dropdown-contentreset"
+                >
+                  <div class="drfl">
+                    <p class="dfp">Фильтр</p>
+                    <div
+                      onclick="myFunction()"
+                      id="myDropdown"
+                      class="closebt dropbtn"
+                    >
+                      &#10006;
+                    </div>
+                  </div>
+                  <div class="drop-check_content">
+                    <p class="dfp dfp1">Коммуникации</p>
+                  </div>
+                  <div class="drop-inchebtn">
+                    <input id="id10" class="inputdrop" type="checkbox" />
+                    <label class="labelss" for="id10">Электричество </label>
+                    <input id="id11" class="inputdrop" type="checkbox" />
+                    <label class="labelss" for="id11">Отопление</label>
+                  </div>
+                  <div class="drop-inchebtn dropmarginbottom">
+                    <input id="id12" class="inputdrop" type="checkbox" />
+                    <label class="labelss labelssz" for="id12">Газ</label>
+                    <input id="id13" class="inputdrop" type="checkbox" />
+                    <label class="labelss" for="id13">Канализация</label>
+                  </div>
+                  <div class="drop-check_content">
+                    <p class="dfp dfp1">Материал стен</p>
+                  </div>
+                  <div class="drop-inchebtn dropmarginbottom">
+                    <input id="id14" class="inputdrop" type="checkbox" />
+                    <label class="labelss labelssz labelssmr" for="id14"
+                      >Кирпич</label
+                    >
+                    <input id="id15" class="inputdrop" type="checkbox" />
+                    <label class="labelss" for="id15">Пеноблоки</label>
+                  </div>
+                  <div class="formcheckbox-flex">
+                    <div class="formcleft_block">
+                      <div class="incheformsg">
+                        <input id="id16" class="inputdrop" type="checkbox" />
+                        <label class="labelss" for="id16">Брус</label>
+                      </div>
+                      <div class="incheformsg">
+                        <input id="id17" class="inputdrop" type="checkbox" />
+                        <label class="labelss" for="id17">Бревно</label>
+                      </div>
+                      <div class="incheformsg">
+                        <input id="id18" class="inputdrop" type="checkbox" />
+                        <label class="labelss" for="id18">Газоблоки</label>
+                      </div>
+                      <div class="incheformsg">
+                        <input id="id19" class="inputdrop" type="checkbox" />
+                        <label class="labelss" for="id19">Металл</label>
+                      </div>
+                    </div>
+                    <div class="formcright_block">
+                      <div class="incheformsg">
+                        <input id="id20" class="inputdrop" type="checkbox" />
+                        <label class="labelss" for="id20">
+                          Сэндвич-панели</label
+                        >
+                      </div>
+                      <div class="incheformsg">
+                        <input id="id21" class="inputdrop" type="checkbox" />
+                        <label class="labelss" for="id21"
+                          >Железобетонные <br />
+                          панели</label
+                        >
+                      </div>
+                      <div class="incheformsg">
+                        <input id="id22" class="inputdrop" type="checkbox" />
+                        <label class="labelss" for="id22">
+                          Эксперимент <br />
+                          материалы</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="drop-check_content">
+                    <p class="dfp dfp1">Этажей в доме</p>
+                  </div>
+                  <div class="formcheckbox-flex formcright_blockgap">
+                    <div class="formcleft_block">
+                      <div class="incheformsg">
+                        <input id="id23" class="inputdrop" type="checkbox" />
+                        <label class="labelss" for="id23">1 этаж</label>
+                      </div>
+                      <div class="incheformsg">
+                        <input id="id24" class="inputdrop" type="checkbox" />
+                        <label class="labelss" for="id24">2 этажа</label>
+                      </div>
+                    </div>
+                    <div class="formcright_block">
+                      <div class="incheformsg">
+                        <input id="id25" class="inputdrop" type="checkbox" />
+                        <label class="labelss" for="id25">3 этажа</label>
+                      </div>
+                      <div class="incheformsg">
+                        <input id="id26" class="inputdrop" type="checkbox" />
+                        <label class="labelss" for="id26">4 и больше</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="drop-check_content">
+                    <p class="dfp dfp1">Количество комнат</p>
+                  </div>
+                  <div
+                    class="formcheckbox-flex formcright_blockgap formcright_blogaap marbtnbott"
+                  >
+                    <div class="formcleft_block">
+                      <div class="incheformsg">
+                        <input id="id27" class="inputdrop" type="checkbox" />
+                        <label class="labelss" for="id27">1 комната</label>
+                      </div>
+                      <div class="incheformsg">
+                        <input id="id28" class="inputdrop" type="checkbox" />
+                        <label class="labelss" for="id28">2 комнаты</label>
+                      </div>
+                      <div class="incheformsg">
+                        <input id="id29" class="inputdrop" type="checkbox" />
+                        <label class="labelss" for="id29">3 комнаты</label>
+                      </div>
+                    </div>
+                    <div class="formcright_block">
+                      <div class="incheformsg">
+                        <input id="id30" class="inputdrop" type="checkbox" />
+                        <label class="labelss" for="id30">4 комнаты</label>
+                      </div>
+                      <div class="incheformsg">
+                        <input id="id31" class="inputdrop" type="checkbox" />
+                        <label class="labelss" for="id31">5 и больше</label>
+                      </div>
+                      <div class="incheformsg">
+                        <input id="id32" class="inputdrop" type="checkbox" />
+                        <label class="labelss" for="id32"
+                          >Свободная планировка</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <button class="button-filter_form">
+                    Показать 138 объявлений
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="sec3__border"></div>
+            <div class="sec3pokaz">Показать 138 объявлений</div>
+          </div>
+          <div class="section3__map">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae2aebf3085164dcaf1e8bf6fb79cf3ed777d953c6842d8a477924e8bd1e486a2&amp;source=constructor"
+              width="954"
+              height="343"
+              frameborder="0"
+            ></iframe>
+            <div class="sec3searc-block">
+              <input
+                placeholder="Сортировать  по ..."
+                type="search"
+                class="sec3__input"
+              />
+              <h3 class="sec3__h3">132 объявления</h3>
+            </div>
+            <div class="sec2-grid sec3-grid">
+              <div class="sec2__card">
+                <div class="sec2__images">
+                  <img src="../img/imga1.png" alt="one" class="sec2__imgg" />
+                </div>
+                <div class="sec2__content">
+                  <h2 class="sec2__h2">
+                    Коттедж 140 м² на участке 5 сот., м2, 2
+                  </h2>
+                  <div class="sec__card-border"></div>
+                  <ul class="sec2__ul">
+                    <li class="sec2__li">Чистовая Отделка</li>
+                    <li class="sec2__li">Широкие дороги(асфальт)</li>
+                    <li class="sec2__li">
+                      1 ЭТАЖ: ВХОДНАЯ ГРУППА, ЗАЛ КУХНЯ, 3-КОМНАТЫ, <br />
+                      САНУЗЕЛ,САУНА.
+                    </li>
+                    <li class="sec2__li">ВЫХОД НА ЗАДНИЙ ДВОР.</li>
+                    <li class="sec2__li">2 ЭТАЖ: 3-комнаты, санузел</li>
+                  </ul>
+                  <div class="sec2__flex">
+                    <div class="sec2__fwr">
+                      <img
+                        src="../icon/geo.png"
+                        alt="geo"
+                        class="sec2__imggeo"
+                      />
+                      <p class="sec2__2">
+                        г. Казань, д. Куюки п. Новые Салмачи, ул. Изумрудная.
+                      </p>
+                    </div>
+                    <div class="sec__card-border"></div>
+                    <div class="sec2__mon">
+                      <div class="sec2__mc">
+                        <div class="sec2__spans">5 500 000 ₽</div>
+                        <div class="sec2__spans">4 900 000 ₽</div>
+                        <a href="#" class="sec2__lin">Смотреть</a>
+                        <a href="#" class="sec2__arright">&rarr;</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sec2__card">
+                <div class="sec2__images">
+                  <img src="../img/imga2.png" alt="one" class="sec2__imgg" />
+                </div>
+                <div class="sec2__content">
+                  <h2 class="sec2__h2">
+                    Коттедж 150 м² на участке 5 сот., м2, 2
+                  </h2>
+                  <div class="sec__card-border"></div>
+                  <ul class="sec2__ul">
+                    <li class="sec2__li">Чистовая Отделка</li>
+                    <li class="sec2__li">Широкие дороги(асфальт)</li>
+                    <li class="sec2__li">
+                      1 ЭТАЖ: ВХОДНАЯ ГРУППА, ЗАЛ КУХНЯ, 3-КОМНАТЫ, <br />
+                      САНУЗЕЛ,САУНА.
+                    </li>
+                    <li class="sec2__li">ВЫХОД НА ЗАДНИЙ ДВОР.</li>
+                    <li class="sec2__li">2 ЭТАЖ: 3-комнаты, санузел</li>
+                  </ul>
+                  <div class="sec2__flex">
+                    <div class="sec2__fwr">
+                      <img
+                        src="../icon/geo.png"
+                        alt="geo"
+                        class="sec2__imggeo"
+                      />
+                      <p class="sec2__2">
+                        г. Казань, д. Куюки п. Новые Салмачи, ул. Изумрудная.
+                      </p>
+                    </div>
+                    <div class="sec__card-border"></div>
+                    <div class="sec2__mon">
+                      <div class="sec2__mc">
+                        <div class="sec2__spans">4 900 000 ₽</div>
+                        <div class="sec2__fflf">
+                          <a href="#" class="sec2__lin">Смотреть</a>
+                          <a href="#" class="sec2__arright">&rarr;</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sec2__card">
+                <div class="sec2__images">
+                  <img src="../img/imga1.png" alt="one" class="sec2__imgg" />
+                </div>
+                <div class="sec2__content">
+                  <h2 class="sec2__h2">
+                    Коттедж 140 м² на участке 5 сот., м2, 2
+                  </h2>
+                  <div class="sec__card-border"></div>
+                  <ul class="sec2__ul">
+                    <li class="sec2__li">Чистовая Отделка</li>
+                    <li class="sec2__li">Широкие дороги(асфальт)</li>
+                    <li class="sec2__li">
+                      1 ЭТАЖ: ВХОДНАЯ ГРУППА, ЗАЛ КУХНЯ, 3-КОМНАТЫ, <br />
+                      САНУЗЕЛ,САУНА.
+                    </li>
+                    <li class="sec2__li">ВЫХОД НА ЗАДНИЙ ДВОР.</li>
+                    <li class="sec2__li">2 ЭТАЖ: 3-комнаты, санузел</li>
+                  </ul>
+                  <div class="sec2__flex">
+                    <div class="sec2__fwr">
+                      <img
+                        src="../icon/geo.png"
+                        alt="geo"
+                        class="sec2__imggeo"
+                      />
+                      <p class="sec2__2">
+                        г. Казань, д. Куюки п. Новые Салмачи, ул. Изумрудная.
+                      </p>
+                    </div>
+                    <div class="sec__card-border"></div>
+                    <div class="sec2__mon">
+                      <div class="sec2__mc">
+                        <div class="sec2__spans">5 500 000 ₽</div>
+                        <div class="sec2__spans">4 900 000 ₽</div>
+                        <a href="#" class="sec2__lin">Смотреть</a>
+                        <a href="#" class="sec2__arright">&rarr;</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sec2__card">
+                <div class="sec2__images">
+                  <img src="../img/imga2.png" alt="one" class="sec2__imgg" />
+                </div>
+                <div class="sec2__content">
+                  <h2 class="sec2__h2">
+                    Коттедж 150 м² на участке 5 сот., м2, 2
+                  </h2>
+                  <div class="sec__card-border"></div>
+                  <ul class="sec2__ul">
+                    <li class="sec2__li">Чистовая Отделка</li>
+                    <li class="sec2__li">Широкие дороги(асфальт)</li>
+                    <li class="sec2__li">
+                      1 ЭТАЖ: ВХОДНАЯ ГРУППА, ЗАЛ КУХНЯ, 3-КОМНАТЫ, <br />
+                      САНУЗЕЛ,САУНА.
+                    </li>
+                    <li class="sec2__li">ВЫХОД НА ЗАДНИЙ ДВОР.</li>
+                    <li class="sec2__li">2 ЭТАЖ: 3-комнаты, санузел</li>
+                  </ul>
+                  <div class="sec2__flex">
+                    <div class="sec2__fwr">
+                      <img
+                        src="../icon/geo.png"
+                        alt="geo"
+                        class="sec2__imggeo"
+                      />
+                      <p class="sec2__2">
+                        г. Казань, д. Куюки п. Новые Салмачи, ул. Изумрудная.
+                      </p>
+                    </div>
+                    <div class="sec__card-border"></div>
+                    <div class="sec2__mon">
+                      <div class="sec2__mc">
+                        <div class="sec2__spans">4 900 000 ₽</div>
+                        <div class="sec2__fflf">
+                          <a href="#" class="sec2__lin">Смотреть</a>
+                          <a href="#" class="sec2__arright">&rarr;</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sec2__card">
+                <div class="sec2__images">
+                  <img src="../img/imga1.png" alt="one" class="sec2__imgg" />
+                </div>
+                <div class="sec2__content">
+                  <h2 class="sec2__h2">
+                    Коттедж 140 м² на участке 5 сот., м2, 2
+                  </h2>
+                  <div class="sec__card-border"></div>
+                  <ul class="sec2__ul">
+                    <li class="sec2__li">Чистовая Отделка</li>
+                    <li class="sec2__li">Широкие дороги(асфальт)</li>
+                    <li class="sec2__li">
+                      1 ЭТАЖ: ВХОДНАЯ ГРУППА, ЗАЛ КУХНЯ, 3-КОМНАТЫ, <br />
+                      САНУЗЕЛ,САУНА.
+                    </li>
+                    <li class="sec2__li">ВЫХОД НА ЗАДНИЙ ДВОР.</li>
+                    <li class="sec2__li">2 ЭТАЖ: 3-комнаты, санузел</li>
+                  </ul>
+                  <div class="sec2__flex">
+                    <div class="sec2__fwr">
+                      <img
+                        src="../icon/geo.png"
+                        alt="geo"
+                        class="sec2__imggeo"
+                      />
+                      <p class="sec2__2">
+                        г. Казань, д. Куюки п. Новые Салмачи, ул. Изумрудная.
+                      </p>
+                    </div>
+                    <div class="sec__card-border"></div>
+                    <div class="sec2__mon">
+                      <div class="sec2__mc">
+                        <div class="sec2__spans">5 500 000 ₽</div>
+                        <div class="sec2__spans">4 900 000 ₽</div>
+                        <a href="#" class="sec2__lin">Смотреть</a>
+                        <a href="#" class="sec2__arright">&rarr;</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sec2__card">
+                <div class="sec2__images">
+                  <img src="../img/imga2.png" alt="one" class="sec2__imgg" />
+                </div>
+                <div class="sec2__content">
+                  <h2 class="sec2__h2">
+                    Коттедж 150 м² на участке 5 сот., м2, 2
+                  </h2>
+                  <div class="sec__card-border"></div>
+                  <ul class="sec2__ul">
+                    <li class="sec2__li">Чистовая Отделка</li>
+                    <li class="sec2__li">Широкие дороги(асфальт)</li>
+                    <li class="sec2__li">
+                      1 ЭТАЖ: ВХОДНАЯ ГРУППА, ЗАЛ КУХНЯ, 3-КОМНАТЫ, <br />
+                      САНУЗЕЛ,САУНА.
+                    </li>
+                    <li class="sec2__li">ВЫХОД НА ЗАДНИЙ ДВОР.</li>
+                    <li class="sec2__li">2 ЭТАЖ: 3-комнаты, санузел</li>
+                  </ul>
+                  <div class="sec2__flex">
+                    <div class="sec2__fwr">
+                      <img
+                        src="../icon/geo.png"
+                        alt="geo"
+                        class="sec2__imggeo"
+                      />
+                      <p class="sec2__2">
+                        г. Казань, д. Куюки п. Новые Салмачи, ул. Изумрудная.
+                      </p>
+                    </div>
+                    <div class="sec__card-border"></div>
+                    <div class="sec2__mon">
+                      <div class="sec2__mc">
+                        <div class="sec2__spans">4 900 000 ₽</div>
+                        <div class="sec2__fflf">
+                          <a href="#" class="sec2__lin">Смотреть</a>
+                          <a href="#" class="sec2__arright">&rarr;</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="section8">
+      <section class="sec8">
+        <div class="container">
+          <div class="sec8__information">
+            <h2 class="sec8__h2">Связаться с нами</h2>
+            <p class="sec8__p">Мы перезвоним в ближайшее время</p>
+          </div>
+          <form action="#" class="form">
+            <div class="form__flex">
+              <div class="form__flex-left">
+                <label class="label" for="name1">Имя</label>
+                <input
+                  required
+                  placeholder="Иван"
+                  name="name1"
+                  class="input"
+                  type="text"
+                  id="name1"
+                />
+              </div>
+              <div class="form__flex-right">
+                <label class="label" for="names">Телефон</label>
+                <input
+                  required
+                  id="names"
+                  placeholder="8 (918) 123-45-67"
+                  name="names"
+                  class="input"
+                  type="tel"
+                />
+              </div>
+            </div>
+            <label class="label" for="text">Ваше сообщение</label>
+            <textarea
+              name="texts"
+              id="text"
+              class="textarea"
+              name=""
+            ></textarea>
+            <label class="label" for="labelss"
+              >Прикрепить документ (если нужно)</label
+            >
+            <div class="sec8__wrappers">
+              <input id="labelss" class="inputfile" type="file" />
+              <div class="checkbox">
+                <input required type="checkbox" checked class="inputcheck8" />
+                <span class="sec8__span">
+                  Я соглашаюсь с
+                  <a href="#" class="sec8__check"
+                    >Политикой конфиденциальности</a
+                  ></span
+                >
+              </div>
+            </div>
+            <button type="submit" class="sec8__button">Отправить</button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="fot__grid">
+          <div class="fot__left">
+            <img src="../img/logo3.png" alt="logo3" class="fot__img">
+          </div>
+          <div class="fot__right fot__rightw">
+            <h4 class="fot__h4">Соц сети:</h4>
+            <div class="fr1">
+              <img src="../icon/icon_whatsapp.png" alt="whtat" class="fr1__img">
+              <a href="#" class="fr1__link">Мы в WhatsApp</a>
+            </div>
+            <div class="fr1">
+              <img src="../icon/icon_instagram1.png" alt="Instagram" class="fr1__img">
+              <a href="#" class="fr1__link">Мы в Instagram</a>
+            </div>
+            <h4 class="fot__h4 fot__hh">Режим работы:</h4>
+            <div class="fr1">
+              <img src="../icon/icon_clock.png" alt="icon_clock" class="fr1__img">
+              <a href="#" class="fr1__link">Пн - Пт с 9:00 -18:00</a>
+            </div>
+          </div>
+          <div class="fot__right fot__rightw">
+            <h4 class="fot__h4">Почта:</h4>
+            <div class="fr1">
+              <img src="../icon/icon_mail.png" alt="mail" class="fr1__img">
+              <a href="#" class="fr1__link">analliance-house@mail.ru</a>
+            </div>
+            <h4 class="fot__h4 fot__hh">Телефон:</h4>
+            <div class="fr1 fr1g">
+              <div class="fot_contactf">
+                <img src="../icon/contact.png" alt="contact" class="fr1__img">
+                <a href="tel:88432251514" class="fr1__link">8 (843) 225-15-14</a>
+              </div>
+            </div>
+            <div class="fot_contactf">
+              <img src="../icon/contact.png" alt="contact" class="fr1__img">
+              <a href="tel:88432484315" class="fr1__link">8 (843) 248-43-15</a>
+            </div>
+          </div>
+          <div class="fot__right">
+            <h4 class="fot__h4">Адрес:</h4>
+            <div class="fr1">
+              <img src="../icon/icon1.png" alt="mail" class="fr1__img">
+              <a href="#" class="fr1__link">г. Казань, ул. Закиева 4, офис 5</a>
+            </div>
+            <div class="fr1">
+              <img src="../icon/icon1.png" alt="mail" class="fr1__img">
+              <a href="#" class="fr1__link">г. Арск, ул. Банковская 1, 2 этаж</a>
+            </div>
+          </div>
+        </div>
+        <div class="fot__border"></div>
+        <div class="fot__policy">
+          <a href="#" class="fot__poli">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+    <div class="fot-mobile">
+      <div class="container">
+        <div class="fotm-flex">
+          <img src="../img/logo3.png" alt="logo3" class="fotm-img">
+          <div class="humburger" id="burg">
+            <span class="humburger_span hum_span1"></span>
+            <span class="humburger_span hum_span2"></span>
+            <span class="humburger_span hum_span3"></span>
+          </div>
+        </div>
+        <div class="fot9l">
+          <div class="fot9object">
+            <img src="../icon/contact.png" alt="" class="fot9img">
+            <a href="tel:88432484315" class="fot9link">8 (843) 248-43-15</a>
+          </div>
+          <div class="fot9object">
+            <img src="../icon/contact.png" alt="" class="fot9img">
+            <a href="tel:88432251514" class="fot9link">8 (843) 225-15-14</a>
+          </div>
+        </div>
+        <div class="fot9l">
+          <div class="fot9object">
+            <img src="../icon/icon_whatsapp.png" alt="" class="fot9img">
+            <a href="#" class="fot9link">Мы в WhatsApp</a>
+          </div>
+          <div class="fot9object">
+            <img src="../icon/icon_instagram1.png" alt="" class="fot9img">
+            <a href="#" class="fot9link">Мы в Instagram</a>
+          </div>
+        </div>
+        <div class="fot9border"></div>
+        <div class="fo9wrapper">
+          <img src="../icon/icon_clock.png" alt="" class="ftwimg">
+          <a href="#" class="ft9links">Пн - Пт с 9:00 -18:00</a>
+        </div>
+        <div class="fo9wrapper">
+          <img src="../icon/icon_mail.png" alt="" class="ftwimg">
+          <a href="#" class="ft9links">analliance-house@mail.ru</a>
+        </div>
+        <div class="fo9wrapper">
+          <img src="../icon/icon1.png" alt="" class="ftwimg">
+          <a href="#" class="ft9links">г. Казань, ул. Закиева 4, офис 5</a>
+        </div>
+        <div class="fo9wrapper">
+          <img src="../icon/icon1.png" alt="" class="ftwimg">
+          <a href="#" class="ft9links">г. Арск, ул. Банковская 1, 2 этаж</a>
+        </div>
+        <div class="fot9border"></div>
+        <div class="fo9policyc">
+          <a href="#" class="flpoli">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+    <script src="../js2.js"></script>
+    <script src="../js.js"></script>
+  </body>
+</html>

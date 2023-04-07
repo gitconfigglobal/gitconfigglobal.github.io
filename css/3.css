@@ -1,0 +1,116 @@
+.section3 {
+  padding: 10rem 0 4rem 0;
+  background: #2b2c30;
+}
+.section3__map {
+  object-fit: cover;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+.section3__flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+iframe {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 2.1rem;
+}
+.section3__filter {
+  background: radial-gradient(
+    93.74% 109.67% at 50% -2%,
+    #4b4d53 0%,
+    #1c1c1f 100%
+  );
+  box-shadow: 0px 3px 15px rgba(42, 42, 46, 0.25);
+  border-radius: 10px;
+  width: 29.7rem;
+  min-height: 90.8rem;
+  padding: 1.7rem;
+}
+.section3__flexfilter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sec3__h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #f9f9f9;
+}
+.sec3__p {
+  font-family: "Montserrat";
+  font-size: 1.3rem;
+  color: #f9f9f9;
+}
+.sec3__border {
+  background: #d9d9d9;
+  width: 100%;
+  height: 0.2rem;
+  margin: 2.7rem 0;
+}
+.sec3fwidth {
+  margin-bottom: 2.5rem;
+  width: 100%;
+}
+.sec3f2 {
+  width: 25rem;
+  height: auto;
+}
+.sec3mt {
+  margin-top: 2.5rem;
+}
+.sec3-flex_filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25rem;
+  padding: 2px 13px;
+  background: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 15px;
+  color: #000000;
+  border-radius: 0.6rem;
+}
+.dropdown-contentreset {
+  min-width: 34.5rem;
+}
+.sec3pokaz {
+  font-size: 1.6rem;
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 600;
+  color: #1f1f1f;
+  padding: 1.4rem 0;
+  background: #fff;
+  border-radius: 0.6rem;
+  width: 25rem;
+}
+.sec3searc-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sec3__input {
+  color: #fff;
+  background: inherit;
+  padding: 1.5rem 1rem;
+  border: 1px solid #8d8d8d;
+  width: 29rem;
+  border-radius: 0.5rem;
+}
+input::placeholder {
+  color: #f2f2f2;
+  font-size: 1.4rem;
+}
+.sec3__h3 {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-align: right;
+  color: #ededed;
+}
